@@ -8,45 +8,70 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #F5F5DC; /* Beige */
-            color: #333; /* Dark Gray/Black */
+            color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
             background: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 60%;
         }
-        h1, h2 {
-            color: black;
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
-        a {
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        h2 {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .buttons a {
             text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        .btn {
-            display: inline-block;
             background-color: black;
             color: white;
             padding: 10px 20px;
-            margin: 10px;
             border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .social-icons a {
+            margin: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bikuma Mpungi Ngandu</h1>
-        <h2>Executive Assistant | CRM Expert | Multilingual Professional</h2>
-        <p>Welcome to my portfolio! I specialize in executive support, customer relationship management, and problem-solving in fast-paced environments.</p>
-        
-        <a href="https://www.linkedin.com/in/bikumangandu/" target="_blank" class="btn">View My LinkedIn</a>
-        <a href="cv/Bikuma_Ngandu_CV.pdf" download class="btn">Download My CV</a>
+        <div class="profile">
+            <img src="profile.jpg" alt="Bikuma Mpungi Ngandu">
+            <h1>Bikuma Mpungi Ngandu</h1>
+            <h2>Executive Assistant | CRM Expert | Multilingual</h2>
+        </div>
+        <div class="buttons">
+            <a href="BikumaMNgandu_Resume.pdf" download>Download My CV</a>
+            <a href="#projects">View Projects</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/bikumangandu" target="_blank">🔗 LinkedIn</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">📷 Instagram</a>
+        </div>
     </div>
 </body>
 </html>
